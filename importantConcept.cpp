@@ -1,13 +1,11 @@
 // printf and scanf works in iostream but in c++ language, we will use cin and cout 
 // <<endl means jump into next line
 // cout // << is called the insertion operator 
-
-// there are three types of datatypes : built-in(int,float(decimal numbers od low precision),char,bool,short,
+// there are three types of datatypes : built-in(int,float(decimal numbers of low precision),char,bool,short,
 //long int,double(decimal numbers of high precision)), user defined(struct,union,enum), and 
 //derived(array,function,pointer) data types
 
 // in "iostream" stream means sequece of bytes
-
 //when new keyword is used, new send request to heap memory, if there is any space free it is reserved and its address is returned
 
 
@@ -23,6 +21,8 @@
 //   return 0;
 // }
 
+
+
 // #include<iostream>
 // using namespace std;
 // int glo=45;
@@ -35,7 +35,7 @@
 //     int glo=34;
 //     print();
 //     cout<<"\n";
-//     cout<<"Here local variable value will be printed b/c it has a higher precedence : "<<glo;
+//     cout<<"Here local variable value will be printed b/c it has a higher precedence : "<<glo<<endl;
 //     return 0;
 // }
 
@@ -68,7 +68,7 @@
 // cpp reference for header file, search this on google
 
 
-//comparison operator
+    //comparison operator
 // #include<iostream>
 // using namespace std;
 // int main()
@@ -101,14 +101,10 @@ int main()
     // ============= float, long double and double literals ============
     float num1=3.14f; // f is used with the floating number, if it is not used, it is considered 
                      // by the compiler as double, by writing f it does not create any impact on output
-
     long double num2=3.14l;// similarly l is used here, l means long double, writing l and f is necessary when we do function overloading
                         // we can also use F and L
-
     cout<<"The float number is : "<<num1<<endl<<"The double number is : "<<num2;
-
     return 0;
-
 }*/
 
 // ============= float, long double and double literals ============
@@ -308,13 +304,13 @@ int main()
 //     // int i=90;
 //     // int &h=i; 
 //     // 5..... we can change value at that address by any name of that address
-//     // int e=67;
-//     // int &f=e;
-//     // cout<<e<<"\t"<<f<<endl;
-//     // e++;
-//     // cout<<e<<"\t"<<f<<endl;
-//     // f=78;
-//     // cout<<e<<"\t"<<f<<endl;
+//     int e=67;
+//     int &f=e;
+//     cout<<e<<"\t"<<f<<endl;
+//     e++;
+//     cout<<e<<"\t"<<f<<endl;
+//     f=78;
+//     cout<<e<<"\t"<<f<<endl;
 //     return 0;
 // }
 

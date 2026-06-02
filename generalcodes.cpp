@@ -13,6 +13,7 @@
 //          {
 //             for(int j=i;arr[j]!='\0';j++)
 //              arr[j]=arr[j+1];
+//              i--;
 //          }
 //      }
 //     cout<<"Your string without spaces is : "<<arr<<endl; 
@@ -76,7 +77,7 @@
 //     for(int i=0;*(ptr+i)!='\0';i++)
 //      {
 //         if(*(ptr+i)!=' '&&(*(ptr+i+1)==' '||*(ptr+i+1)=='\0'||*(ptr+i+1)=='\n')) // it checks if their a charater,
-//          len++;                                            //after that is a space or null terminator or backsapce
+//          len++;                                            //after that is a space or null terminator or backspace
 //      }
 //     cout<<"The number of words in your sentence are : "<<len<<endl; 
 //     return 0;
@@ -142,6 +143,7 @@
 // }
 
 
+
 //Reverse the characters of a string without changing word order "FAST NUCES" → "TSAF SECUN"
 // #include<iostream>
 // using namespace std;
@@ -200,6 +202,48 @@
 //     for(int i=0;i<6;i++)
 //      delete[] *(ptr1+i);
 //     delete ptr1;  
+//     return 0;
+// }
+
+// 2D array code 
+// #include<iostream>
+// #include<iomanip>
+// using namespace std;
+// int main()
+// {
+//     int a;cout<<"Enter the number of rows of your 2D array : ";cin>>a;
+//     int **ptr=new int*[a];
+//     int arr[a];
+//     for(int i=0;i<a;i++)
+//     {
+//         int b;
+//         cout<<"Enter number of elements in ("<<i+1<<") number row : ";cin>>b;
+//         *(ptr+i)=new int[b];
+//         arr[i]=b;
+//     }
+//     for(int i=0;i<a;i++)
+//     {
+//         cout<<"Enter "<<arr[i]<<" elements in your ("<<i+1<<") row : ";
+//         for(int j=0;j<arr[i];j++)
+//         {
+//             cin>>ptr[i][j];
+//         }
+//     }
+//     cout<<"Your 2D array "<<endl<<endl;
+//     for(int i=0;i<a;i++)
+//     {
+//         for(int j=0;j<arr[i];j++)
+//         {
+//             cout<<setw(7)<<ptr[i][j]<<" ";
+//         }
+//         cout<<endl;
+//     }
+//     cout<<endl;
+//     for(int i=0;i<a;i++)
+//     {
+//         delete[] *(ptr+i);
+//     }
+//     delete ptr;
 //     return 0;
 // }
 
